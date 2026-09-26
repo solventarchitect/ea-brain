@@ -1,0 +1,17 @@
+# Sources stay local: ignore raw/ contents, keep its README
+/raw/**
+!/raw/**/
+!/raw/README.md
+
+# Secrets and local settings
+.env
+.env.*
+*.pem
+*.key
+.claude/settings.local.json
+
+# Tool and OS noise
+.obsidian/
+.DS_Store
+Thumbs.db
+*.tmp
