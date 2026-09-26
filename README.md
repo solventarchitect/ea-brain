@@ -27,7 +27,7 @@ ea-brain is the pattern that fixes that, reduced to files you can copy. Sources 
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TD
   raw["raw/<br/>sources, read-only"] -->|ingest| agent["AI agent<br/>under CLAUDE.md"]
   agent -->|writes + cross-links| wiki["wiki/<br/>pages the agent owns"]
   wiki -->|checked by| reviewer["skeptical reviewer"]
