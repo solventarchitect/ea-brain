@@ -91,8 +91,8 @@ Each file links to the post that explains why it exists:
 | [`rules/servicenow-table-api.md`](rules/servicenow-table-api.md) | Table API behaviors that report success and store nothing | [Five ServiceNow API Calls That Return Success and Store Nothing](https://mikereams.com/writing/servicenow-api-calls-that-return-success-and-store-nothing) |
 | [`examples/golden-questions.json`](examples/golden-questions.json) | The shape of an answer-quality eval set | [You Don't Need a Bigger Model. You Need Better Retrieval.](https://mikereams.com/writing/better-retrieval-not-a-bigger-model) |
 | [`rules/record-rule.md`](rules/record-rule.md) | Which record a technology request produces | [Software Product or Business Application?](https://mikereams.com/writing/software-product-or-business-application) |
-| [`examples/disposition-record.yaml`](examples/disposition-record.yaml) | A disposition with evidence, ratification and a review date | A Disposition Is a Decision, Not a Field *(write-up coming)* |
-| [`rules/contract-reconcile.md`](rules/contract-reconcile.md) | Reconciling contract exports without false exits | A Cancelled Contract Is Usually a Renamed One *(write-up coming)* |
+| [`examples/disposition-record.yaml`](examples/disposition-record.yaml) | A disposition with evidence, ratification and a review date | [A Disposition Is a Decision, Not a Field](https://mikereams.com/writing/a-disposition-is-a-decision-not-a-field) |
+| [`rules/contract-reconcile.md`](rules/contract-reconcile.md) | Reconciling contract exports without false exits | [A Cancelled Contract Is Usually a Renamed One](https://mikereams.com/writing/a-cancelled-contract-is-usually-a-renamed-one) |
 
 ## Session rituals
 
@@ -129,7 +129,11 @@ Every file here comes from *AI in the Architecture Practice* and *Application Po
 10. [Five ServiceNow API Calls That Return Success and Store Nothing](https://mikereams.com/writing/servicenow-api-calls-that-return-success-and-store-nothing)
 11. [You Don't Need a Bigger Model. You Need Better Retrieval.](https://mikereams.com/writing/better-retrieval-not-a-bigger-model)
 
-Application Portfolio Management: [Software Product or Business Application?](https://mikereams.com/writing/software-product-or-business-application)
+Application Portfolio Management:
+
+1. [Software Product or Business Application?](https://mikereams.com/writing/software-product-or-business-application)
+2. [A Disposition Is a Decision, Not a Field](https://mikereams.com/writing/a-disposition-is-a-decision-not-a-field)
+3. [A Cancelled Contract Is Usually a Renamed One](https://mikereams.com/writing/a-cancelled-contract-is-usually-a-renamed-one)
 
 ## Contributing
 
