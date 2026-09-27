@@ -1,0 +1,23 @@
+{
+  "name": "solventarchitect",
+  "owner": {
+    "name": "Mike Reams",
+    "url": "https://mikereams.com"
+  },
+  "metadata": {
+    "description": "Agent skills from the AI in the Architecture Practice series on mikereams.com."
+  },
+  "plugins": [
+    {
+      "name": "ea-brain",
+      "source": "./plugin/ea-brain",
+      "description": "Set up and run an AI-maintained architecture knowledge base: operating contract, resume state, rules and a skeptical reviewer.",
+      "version": "0.1.0",
+      "author": { "name": "Mike Reams", "url": "https://mikereams.com" },
+      "homepage": "https://mikereams.com/writing/introducing-ea-brain-template",
+      "repository": "https://github.com/solventarchitect/ea-brain",
+      "license": "MIT",
+      "keywords": ["enterprise-architecture", "knowledge-base", "second-brain", "claude-code", "agents"]
+    }
+  ]
+}

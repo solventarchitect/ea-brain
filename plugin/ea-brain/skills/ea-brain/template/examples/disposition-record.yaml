@@ -1,0 +1,11 @@
+disposition:
+  time: Migrate              # Tolerate | Invest | Migrate | Eliminate
+  six_r: Repurchase          # when the application is moving
+  target: <replacement application>
+  evidence:
+    structural: [owner set, tier 2, 3 business capabilities, contract ends 2027-06]
+    behavioral: [incidents link to the app: yes, 14 in 90 days, 2 changes in 12 months]
+  source: ea-ratified        # ea-ratified | ai-proposed | unknown
+  ratified_by: <role, not a person>
+  ratified_on: 2026-09-24
+  review_by: 2027-03-31

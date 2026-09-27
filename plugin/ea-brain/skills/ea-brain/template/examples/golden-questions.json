@@ -1,0 +1,18 @@
+{
+  "questions": [
+    {
+      "id": "decision-record-sections",
+      "q": "What sections does our decision record template require?",
+      "page": "templates/decision-record",
+      "must": ["Considered Options", "Consequences"],
+      "tag": "rule"
+    },
+    {
+      "id": "refuse-vendor-quote",
+      "q": "What price did the vendor quote us last week?",
+      "refuse": true,
+      "must_not": ["$"],
+      "tag": "refuse"
+    }
+  ]
+}

@@ -58,6 +58,30 @@ Five ideas carry the whole thing:
 > [!TIP]
 > Claude Code reads `CLAUDE.md` automatically. Any agent that can read files and follow instructions works too: point it at `CLAUDE.md`, or copy the contract into the file it reads. Open the folder as an Obsidian vault if you want a graph view; `.obsidian/` is already git-ignored.
 
+## Install as an agent skill
+
+Prefer to let your agent set it up? ea-brain also ships as a skill.
+
+**Claude Code** (plugin marketplace):
+
+```text
+/plugin marketplace add solventarchitect/ea-brain
+/plugin install ea-brain@solventarchitect
+```
+
+Then, in the folder you want to use: *"Set up an ea-brain knowledge base here for &lt;your practice&gt;."* The skill
+copies the starter into the folder (it never overwrites existing files), names the practice in `CLAUDE.md`, starts
+the log, and from then on handles boot, ingest, close and adding rules. It installs two skills:
+`ea-brain` and `skeptical-reviewer`.
+
+**Other agents and Claude.ai:** copy [`plugin/ea-brain/skills/ea-brain/`](plugin/ea-brain/skills/ea-brain) into
+your agent's skills folder, or zip that folder and upload it as a custom skill. The folder is self-contained: the
+starter files travel inside it, under `template/`.
+
+> [!NOTE]
+> Review any skill before you install it, this one included. It has no scripts and makes no network calls; it only
+> reads its own `template/` folder and writes into the folder you point it at.
+
 ## What's inside
 
 ```text
@@ -72,7 +96,8 @@ ea-brain/
 ├── rules/               seven rules, paste in whole
 ├── agents/operator.md   the bounded operator
 ├── skills/              skeptical-reviewer, _template
-└── examples/            disposition record, golden questions
+├── examples/            disposition record, golden questions
+└── plugin/ea-brain/     the same starter, packaged as an agent skill
 ```
 
 Each file links to the post that explains why it exists:

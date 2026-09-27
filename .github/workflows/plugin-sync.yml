@@ -1,0 +1,14 @@
+name: plugin-sync
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Plugin copy matches the template
+        run: node scripts/sync-plugin.mjs --check
