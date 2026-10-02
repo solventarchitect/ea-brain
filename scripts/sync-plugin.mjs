@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Keeps the plugin's bundled copy of the starter identical to the repo root.
 // The repo root is the template (GitHub "Use this template"); the plugin under
-// plugin/ea-brain/ carries the same files so an agent can scaffold them.
+// plugin/solvent-brain/ carries the same files so an agent can scaffold them.
 //
 //   node scripts/sync-plugin.mjs          copy root -> plugin
 //   node scripts/sync-plugin.mjs --check  exit 1 if the plugin copy has drifted
@@ -14,7 +14,7 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const skill = join(root, 'plugin/ea-brain/skills/ea-brain');
+const skill = join(root, 'plugin/solvent-brain/skills/solvent-brain');
 const templateDir = join(skill, 'template');
 
 const TEMPLATE_FILES = [
@@ -43,7 +43,7 @@ const bundledName = (p) =>
   p === '.gitignore' ? 'gitignore.template' : p.replace(/(^|\/)SKILL\.md$/, '$1SKILL.template.md');
 
 // Plugin skills that are copies of root files (loaded live by plugin hosts).
-const LIVE = [['skills/skeptical-reviewer/SKILL.md', 'plugin/ea-brain/skills/skeptical-reviewer/SKILL.md']];
+const LIVE = [['skills/skeptical-reviewer/SKILL.md', 'plugin/solvent-brain/skills/skeptical-reviewer/SKILL.md']];
 
 const pairs = [
   ...TEMPLATE_FILES.map((p) => [join(root, p), join(templateDir, bundledName(p))]),

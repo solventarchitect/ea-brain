@@ -1,16 +1,16 @@
 <p align="center">
-  <a href="https://mikereams.com/writing/introducing-ea-brain-template">
+  <a href="https://mikereams.com/writing/introducing-solvent-brain-template">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
       <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
-      <img alt="ea-brain: a starter for an AI-maintained architecture knowledge base. Fig.01 shows raw sources flowing to an AI agent working under contract, which writes the wiki; a reviewer verifies it and NOW.md carries state between sessions." src="assets/banner-dark.png" width="100%">
+      <img alt="solvent-brain: a starter for an AI-maintained architecture knowledge base. Fig.01 shows raw sources flowing to an AI agent working under contract, which writes the wiki; a reviewer verifies it and NOW.md carries state between sessions." src="assets/banner-dark.png" width="100%">
     </picture>
   </a>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-5ec8ff?style=flat-square&labelColor=121e2b"></a>
-  <a href="https://github.com/solventarchitect/ea-brain/generate"><img alt="Use this template" src="https://img.shields.io/badge/use_this-template-5ec8ff?style=flat-square&labelColor=121e2b"></a>
+  <a href="https://github.com/solventarchitect/solvent-brain/generate"><img alt="Use this template" src="https://img.shields.io/badge/use_this-template-5ec8ff?style=flat-square&labelColor=121e2b"></a>
   <a href="https://mikereams.com/writing"><img alt="Read the series" src="https://img.shields.io/badge/read_the-series-b4a7ff?style=flat-square&labelColor=121e2b"></a>
 </p>
 
@@ -22,7 +22,7 @@
 
 Architecture knowledge lives everywhere at once: decisions in slide decks, the application inventory in the CMDB, reasoning in people's heads. Every new question starts with an afternoon of digging, and every answer goes stale the moment it is written down somewhere else.
 
-ea-brain is the pattern that fixes that, reduced to files you can copy. Sources go into `raw/`. An AI agent reads them and writes a cross-linked wiki under a written operating contract. You curate, ask questions and ratify decisions. Nothing depends on a vendor, a database or a plugin: it is Markdown in a Git repository.
+solvent-brain is the pattern that fixes that, reduced to files you can copy. Sources go into `raw/`. An AI agent reads them and writes a cross-linked wiki under a written operating contract. You curate, ask questions and ratify decisions. Nothing depends on a vendor, a database or a plugin: it is Markdown in a Git repository.
 
 ## How it works
 
@@ -49,7 +49,7 @@ Five ideas carry the whole thing:
 
 ## Quick start
 
-1. Click **[Use this template](https://github.com/solventarchitect/ea-brain/generate)** (or clone the repo) to make your own copy.
+1. Click **[Use this template](https://github.com/solventarchitect/solvent-brain/generate)** (or clone the repo) to make your own copy.
 2. Open `CLAUDE.md`, replace `<team/practice>` with your practice's name, and change anything that does not fit.
 3. Drop one source into `raw/`: an export, meeting notes, a vendor notice.
 4. Open an agent session in the folder and ask it to ingest the source. It reads `CLAUDE.md`, then `wiki/NOW.md`, and writes pages under `wiki/`.
@@ -60,21 +60,21 @@ Five ideas carry the whole thing:
 
 ## Install as an agent skill
 
-Prefer to let your agent set it up? ea-brain also ships as a skill.
+Prefer to let your agent set it up? solvent-brain also ships as a skill.
 
 **Claude Code** (plugin marketplace):
 
 ```text
-/plugin marketplace add solventarchitect/ea-brain
-/plugin install ea-brain@solventarchitect
+/plugin marketplace add solventarchitect/solvent-brain
+/plugin install solvent-brain@solventarchitect
 ```
 
-Then, in the folder you want to use: *"Set up an ea-brain knowledge base here for &lt;your practice&gt;."* The skill
+Then, in the folder you want to use: *"Set up a solvent-brain knowledge base here for &lt;your practice&gt;."* The skill
 copies the starter into the folder (it never overwrites existing files), names the practice in `CLAUDE.md`, starts
 the log, and from then on handles boot, ingest, close and adding rules. It installs two skills:
-`ea-brain` and `skeptical-reviewer`.
+`solvent-brain` and `skeptical-reviewer`.
 
-**Other agents and Claude.ai:** copy [`plugin/ea-brain/skills/ea-brain/`](plugin/ea-brain/skills/ea-brain) into
+**Other agents and Claude.ai:** copy [`plugin/solvent-brain/skills/solvent-brain/`](plugin/solvent-brain/skills/solvent-brain) into
 your agent's skills folder, or zip that folder and upload it as a custom skill. The folder is self-contained: the
 starter files travel inside it, under `template/`.
 
@@ -85,7 +85,7 @@ starter files travel inside it, under `template/`.
 ## What's inside
 
 ```text
-ea-brain/
+solvent-brain/
 ├── CLAUDE.md            operating contract
 ├── wiki/
 │   ├── NOW.md           resume state
@@ -97,7 +97,7 @@ ea-brain/
 ├── agents/operator.md   the bounded operator
 ├── skills/              skeptical-reviewer, _template
 ├── examples/            disposition record, golden questions
-└── plugin/ea-brain/     the same starter, packaged as an agent skill
+└── plugin/solvent-brain/ the same starter, packaged as an agent skill
 ```
 
 Each file links to the post that explains why it exists:
@@ -149,7 +149,7 @@ Every file here comes from *AI in the Architecture Practice* and *Application Po
 5. [Two Tiers: Spend the Expensive Model Only on Judgment](https://mikereams.com/writing/two-tiers-spend-the-expensive-model-only-on-judgment)
 6. [Every App Needs Two Capabilities](https://mikereams.com/writing/every-app-needs-two-capabilities)
 7. [Pushed Is Not Deployed](https://mikereams.com/writing/pushed-is-not-deployed)
-8. [Introducing ea-brain](https://mikereams.com/writing/introducing-ea-brain-template)
+8. [Introducing solvent-brain](https://mikereams.com/writing/introducing-solvent-brain-template)
 9. [A Dry Run Is Not Permission](https://mikereams.com/writing/a-dry-run-is-not-permission)
 10. [Five ServiceNow API Calls That Return Success and Store Nothing](https://mikereams.com/writing/servicenow-api-calls-that-return-success-and-store-nothing)
 11. [You Don't Need a Bigger Model. You Need Better Retrieval.](https://mikereams.com/writing/better-retrieval-not-a-bigger-model)

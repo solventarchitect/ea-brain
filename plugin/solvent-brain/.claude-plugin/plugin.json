@@ -1,10 +1,10 @@
 {
-  "name": "ea-brain",
-  "version": "0.1.0",
+  "name": "solvent-brain",
+  "version": "0.2.0",
   "description": "Set up and run an AI-maintained architecture knowledge base: operating contract, resume state, rules and a skeptical reviewer.",
   "author": { "name": "Mike Reams", "url": "https://mikereams.com" },
-  "homepage": "https://mikereams.com/writing/introducing-ea-brain-template",
-  "repository": "https://github.com/solventarchitect/ea-brain",
+  "homepage": "https://mikereams.com/writing/introducing-solvent-brain-template",
+  "repository": "https://github.com/solventarchitect/solvent-brain",
   "license": "MIT",
   "keywords": ["enterprise-architecture", "knowledge-base", "second-brain", "claude-code", "agents"]
 }
