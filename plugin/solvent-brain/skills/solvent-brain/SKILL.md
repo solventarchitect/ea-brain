@@ -1,11 +1,11 @@
 ---
-name: ea-brain
-description: Set up and run an AI-maintained architecture knowledge base (ea-brain). Use when asked to start a knowledge base or second brain for an architecture practice, to scaffold one into a folder, to resume or close a session in one, to ingest a source into it, or to add one of its rules.
+name: solvent-brain
+description: Set up and run an AI-maintained architecture knowledge base (solvent-brain). Use when asked to start a knowledge base or second brain for an architecture practice, to scaffold one into a folder, to resume or close a session in one, to ingest a source into it, or to add one of its rules.
 ---
 
-# ea-brain
+# solvent-brain
 
-An ea-brain is a folder of Markdown maintained by an agent under a written operating contract: sources go into
+A solvent-brain is a folder of Markdown maintained by an agent under a written operating contract: sources go into
 `raw/`, the agent writes a cross-linked wiki under `wiki/`, and a person curates, asks and ratifies. The files are
 the memory. The why behind every file is in the series at https://mikereams.com/writing.
 
@@ -40,7 +40,7 @@ If the current folder has no `CLAUDE.md` with a "Knowledge Base Operating Contra
 5. In `wiki/NOW.md`, clear the example rows (keep the headings and table headers) and set the "Last session" line
    to today's date with "Knowledge base created."
 6. Create `wiki/log/YYYY-MM.md` for the current month with the first entry:
-   `## [YYYY-MM-DD] setup | ea-brain scaffold` and one line listing the files created.
+   `## [YYYY-MM-DD] setup | solvent-brain scaffold` and one line listing the files created.
 7. If the folder is not a git repository, offer `git init` and a first commit; run it only if the user agrees.
 8. Tell the user the next step: put one source in `raw/` and ask you to ingest it.
 
